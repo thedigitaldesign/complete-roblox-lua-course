@@ -40,7 +40,7 @@ luac.out
 *.hex
 
 # Project place file
-/complete-roblox-lua.rbxlx
+/*.rbxlx
 
 # Roblox Studio lock files
 /*.rbxlx.lock
