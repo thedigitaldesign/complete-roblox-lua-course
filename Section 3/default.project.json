@@ -125,6 +125,48 @@
         "ClickScript": {
           "$path": "src/Workspace/MovingParts/ClickScript.server.luau"
         }
+      },
+      "ForcefulPart": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": false,
+          "Color": [
+            0.155,
+            0,
+            0.155
+          ],
+          "Size": [
+            4,
+            2,
+            4
+          ],
+          "Position": [
+            0,
+            1,
+            -15
+          ]
+        },
+        "ForcefulAttachment": {
+          "$className": "Attachment",
+          "$properties": {
+            "Position": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "VectorForce": {
+          "$className": "VectorForce",
+          "$properties": {
+            "Force": [
+              3000,
+              0,
+              0
+            ],
+            "ApplyAtCenterOfMass": true
+          }
+        }
       }
     },
     "Lighting": {
