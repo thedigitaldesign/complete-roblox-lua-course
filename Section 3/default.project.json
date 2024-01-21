@@ -24,6 +24,7 @@
     },
 
     "Workspace": {
+      "$className": "Workspace",
       "$properties": {
         "FilteringEnabled": true
       },
@@ -47,6 +48,82 @@
             20,
             512
           ]
+        }
+      },
+      "MovingParts": {
+        "$className": "Folder",
+
+        "ClickPartLeft": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true,
+            "Color": [
+              163,
+              162,
+              165
+            ],
+            "Size": [
+              4,
+              2,
+              2
+            ],
+            "Position": [
+              13,
+              1,
+              13
+            ]
+          },
+          "ClickDetector": {
+            "$className": "ClickDetector"
+          }
+        },
+        "ClickPartRight": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true,
+            "Color": [
+              163,
+              162,
+              165
+            ],
+            "Size": [
+              4,
+              2,
+              2
+            ],
+            "Position": [
+              4,
+              1,
+              13
+            ]
+          },
+          "ClickDetector": {
+            "$className": "ClickDetector"
+          }
+        },
+        "PartHover": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true,
+            "Color": [
+              0.255,
+              0,
+              0.255
+            ],
+            "Size": [
+              4,
+              2,
+              2
+            ],
+            "Position": [
+              4,
+              10,
+              13
+            ]
+          }
+        },
+        "ClickScript": {
+          "$path": "src/Workspace/MovingParts/ClickScript.server.luau"
         }
       }
     },

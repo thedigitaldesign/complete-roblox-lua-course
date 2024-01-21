@@ -2,7 +2,6 @@
 
 local baseplate = game.Workspace.Baseplate
 
-local myPart: Part = game.Workspace.Part
+local myPart: Part = game.Workspace.WallPart
 
-myPart.Transparency = 0.5
 myPart.Color = Color3.fromRGB(255, 116, 116)
