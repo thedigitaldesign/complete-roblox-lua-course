@@ -167,6 +167,30 @@
             "ApplyAtCenterOfMass": true
           }
         }
+      },
+      "ExperienceClicker": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Color": [
+            0.255,
+            0,
+            0.255
+          ],
+          "Size": [
+            4,
+            4,
+            4
+          ],
+          "Position": [
+            20,
+            1,
+            -20
+          ]
+        },
+        "ClickDetector": {
+          "$className": "ClickDetector"
+        }
       }
     },
     "Lighting": {
