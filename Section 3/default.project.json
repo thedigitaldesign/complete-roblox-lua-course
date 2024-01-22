@@ -194,6 +194,72 @@
         "ExperienceClickerScript": {
           "$path": "src/Workspace/ExperienceClicker/ExperienceClickerScript.server.luau"
         }
+      },
+      "Resources": {
+        "$className": "Folder",
+
+        "Experience": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true,
+            "Color": [
+              -9,
+              -137,
+              -207
+            ],
+            "Size": [
+              0.25,
+              1,
+              1
+            ],
+            "Position": [
+              35,
+              2,
+              79
+            ],
+            "Shape": "Block",
+            "Orientation": [
+              45,
+              0,
+              0
+            ],
+            "Material": "Neon"
+          },
+          "ExperienceScript": {
+            "$path": "src/Workspace/Resources/Experience/ExperienceScript.server.luau"
+          }
+        },
+        "Gold": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true,
+            "Color": [
+              -255,
+              -255,
+              0
+            ],
+            "Size": [
+              0.25,
+              1,
+              1
+            ],
+            "Position": [
+              35,
+              2,
+              82
+            ],
+            "Shape": "Cylinder",
+            "Orientation": [
+              90,
+              0,
+              0
+            ],
+            "Material": "Neon"
+          },
+          "ExperienceScript": {
+            "$path": "src/Workspace/Resources/Gold/GoldScript.server.luau"
+          }
+        }
       }
     },
     "Lighting": {
