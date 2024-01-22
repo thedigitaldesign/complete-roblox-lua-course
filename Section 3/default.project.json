@@ -190,6 +190,9 @@
         },
         "ClickDetector": {
           "$className": "ClickDetector"
+        },
+        "ExperienceClickerScript": {
+          "$path": "src/Workspace/ExperienceClicker/ExperienceClickerScript.server.luau"
         }
       }
     },
