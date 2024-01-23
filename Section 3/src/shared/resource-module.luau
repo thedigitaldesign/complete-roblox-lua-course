@@ -1,6 +1,6 @@
 local module = {}
 
-local players = game.Players
+local players: Players = game.Players
 
 function module.GoldPickup(player: Player, goldPart: Part, goldValue: number) 
   local parent = player.Parent -- The parent of the player is the character
