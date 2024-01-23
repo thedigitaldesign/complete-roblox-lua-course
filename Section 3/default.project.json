@@ -226,7 +226,13 @@
             "Material": "Neon"
           },
           "ExperienceScript": {
-            "$path": "src/Workspace/Resources/Experience/ExperienceScript.server.luau"
+            "$path": "src/Workspace/Resources/Experience/ExperienceScript.server.luau",
+            "ExperienceValue": {
+              "$className": "IntValue",
+              "$properties": {
+                "Value": 5
+              }
+            }
           }
         },
         "Gold": {
@@ -256,8 +262,14 @@
             ],
             "Material": "Neon"
           },
-          "ExperienceScript": {
-            "$path": "src/Workspace/Resources/Gold/GoldScript.server.luau"
+          "GoldScript": {
+            "$path": "src/Workspace/Resources/Gold/GoldScript.server.luau",
+            "GoldValue": {
+              "$className": "IntValue",
+              "$properties": {
+                "Value": 10
+              }
+            }
           }
         }
       }

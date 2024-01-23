@@ -1,27 +1,25 @@
+-- Required Modules
+local resources = require(game.ReplicatedStorage.Shared["resource-module"])
+
+-- Variables
+local RunService = game:GetService("RunService")
 local goldPart = script.Parent
-local goldValue = 1
+local goldValue = goldPart.GoldScript.GoldValue.Value
 
-local players = game.Players
+local ROTATE_SPEED = 4
 
+-- Scripts
+RunService.PostSimulation:Connect(function()
+  goldPart.CFrame *= CFrame.Angles(math.rad(ROTATE_SPEED), math.rad(ROTATE_SPEED), 0)
+end)
+
+-- Functions
 local function spawnGold()
   
 end
 
 local function onGoldTouch(player: Player)
-  local parent = player.Parent -- The parent of the player is the character
-  local humanoid = parent:FindFirstChildWhichIsA("Humanoid")
-
-  if humanoid then
-    goldPart:Destroy()
-
-    local player = players:GetPlayerFromCharacter(parent)
-    local leaderstats = player.leaderstats
-    local goldStats = leaderstats and leaderstats:FindFirstChild("Gold")
-
-    if goldStats then
-      goldStats.Value += goldValue
-    end
-  end
+  resources.GoldPickup(player, goldPart, goldValue)
 end
 
 goldPart.Touched:Connect(onGoldTouch)
