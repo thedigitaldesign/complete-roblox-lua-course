@@ -41,7 +41,7 @@ luac.out
 
 # Project place file
 *.rbxlx
-*.rbxl
+# *.rbxl
 
 # Roblox Studio lock files
 *.rbxlx.lock
